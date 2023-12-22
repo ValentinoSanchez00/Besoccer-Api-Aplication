@@ -1,3 +1,14 @@
+body{
+    background-image: url(../assets/images/campofutbol.jpg);
+    top: 0;
+    left: 0;
+
+  
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+}
 .container{
     min-width: 300px;
     max-width: 2560px;
@@ -6,13 +17,15 @@
 }
 
 .main{
-    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.247);
+    border: 1px solid rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 .nav{
+    background-color: rgba(255, 255, 255, 0.247);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,6 +46,7 @@
 .menu__link{
     text-decoration: none;
     font-size: 2rem;
+    color: black;
 }
 .nav__title{
     font-size: 2rem;
@@ -59,3 +73,15 @@
 .nombreequipo{
     font-size: 2rem;
 }
+.footer {
+    margin-top: 2rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.247);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
