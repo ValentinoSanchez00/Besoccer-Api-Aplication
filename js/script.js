@@ -78,6 +78,8 @@ let arraydecompeticiones = [];
 
 let body = document.getElementById("body");
 let main = document.getElementById("main");
+let galeria=document.getElementById("galeria")
+let hamburguesa=document.getElementById('mobile-menu')
 
 const cargar = () => {
   let apiKey = '77db80f423ff48e58b77d89095844295';
@@ -112,7 +114,7 @@ const cargar = () => {
         img.classList.add("img_ligas")
         img.src = element.imagen;
         img.id = element.id
-        main.append(img)
+        galeria.append(img)
       });
     });
 };
@@ -198,4 +200,9 @@ const mostrarequiposdelaliga = (event) => {
 
 
 document.addEventListener("DOMContentLoaded", cargar);
-main.addEventListener("click", mostrarequiposdelaliga)
+galeria.addEventListener("click", mostrarequiposdelaliga)
+
+hamburguesa.addEventListener('click', function () {
+  var navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('active');
+});

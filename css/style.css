@@ -1,22 +1,23 @@
-body{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
     background-image: url(../assets/images/campofutbol.jpg);
     top: 0;
     left: 0;
-
-  
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-  
 }
-.container{
+
+.container {
     min-width: 300px;
     max-width: 2560px;
     width: 100%;
     margin: 0 auto;
 }
 
-.main{
+.main {
     background-color: rgba(255, 255, 255, 0.247);
     border: 1px solid rgba(0, 0, 0, 0);
     display: flex;
@@ -24,7 +25,14 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-.nav{
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav {
     background-color: rgba(255, 255, 255, 0.247);
     display: flex;
     justify-content: space-around;
@@ -33,30 +41,34 @@ body{
     padding: 1rem;
     border: 1px solid black;
 }
-.nav__menu{
-  
+
+.nav__menu {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.menu__content{
+
+.menu__content {
     list-style: none;
 }
-.menu__link{
+
+.menu__link {
     text-decoration: none;
     font-size: 2rem;
     color: black;
 }
-.nav__title{
+
+.nav__title {
     font-size: 2rem;
 }
 
-.img_ligas{
+.img_ligas {
     width: 200px;
     margin: 1rem;
 }
-.todoslosequipos{
+
+.todoslosequipos {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -64,15 +76,18 @@ body{
     padding: 1rem;
     flex-wrap: wrap;
 }
-.divdeequipo{
+
+.divdeequipo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.nombreequipo{
+
+.nombreequipo {
     font-size: 2rem;
 }
+
 .footer {
     margin-top: 2rem;
     font-weight: bold;
@@ -85,3 +100,22 @@ body{
     font-size: 2rem;
 }
 
+.liga-article {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.liga-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.liga-title {
+    font-size: 2.5rem;
+   
+}
